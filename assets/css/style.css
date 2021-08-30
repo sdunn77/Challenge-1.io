@@ -7,7 +7,7 @@
 body {
     background-color: #d9dcd6;
 }
-/* adjusted the header selectors below for the change in semantics from div to header */
+/* adjusted the header selectors below for the change in semantics from div to header in html */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -54,7 +54,8 @@ p {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+    /* removed an extra . from the image relative path */
+    background-image: url("./images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -63,8 +64,9 @@ p {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
+    margin-bottom: 50px;
 }
-
+/* removed the last word of each of the three classes in the content section on both CSS and html to better differentiate them from the ids */
 .search-engine {
     margin-bottom: 20px;
     padding: 50px;
